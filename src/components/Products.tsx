@@ -14,7 +14,7 @@ const Products = () => {
     { aro: "19", description: "Luxury para veículos premium", image: "/products/aro-19-wheel.png" },
     { aro: "20", description: "Alto padrão para SUVs grandes", image: "/products/aro-20-wheel-new.png" },
     { aro: "21", description: "Exclusivo para veículos de luxo", image: "/products/aro-21-wheel.png" },
-    { aro: "22", description: "Top de linha para grandes SUVs" },
+    { aro: "22", description: "Top de linha para grandes SUVs", image: "/products/aro-22-wheel.png" },
   ];
 
   return (
