@@ -8,7 +8,7 @@ const Products = () => {
     { aro: "13", description: "Ideal para carros populares e economia", image: "/products/aro-13-wheel-new.png" },
     { aro: "14", description: "Perfeito para compactos e sedans", image: "/products/aro-14-wheel-new.png" },
     { aro: "15", description: "Ótima opção para sedans médios", image: "/products/aro-15-wheel-new.png" },
-    { aro: "16", description: "Excelente para SUVs compactos", image: "/products/aro-16-wheel.png" },
+    { aro: "16", description: "Excelente para SUVs compactos", image: "/products/aro-16-wheel-new.png" },
     { aro: "17", description: "Premium para sedans e SUVs" },
     { aro: "18", description: "Esportivo para carros de performance" },
     { aro: "19", description: "Luxury para veículos premium" },
