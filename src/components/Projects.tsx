@@ -42,7 +42,7 @@ const Projects = () => {
     },
     {
       id: 9,
-      image: "/projects/suv-branco-4.jpg"
+      image: "/projects/midia-17.jpg"
     }
   ];
 
