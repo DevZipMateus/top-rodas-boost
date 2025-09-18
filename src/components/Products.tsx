@@ -11,7 +11,7 @@ const Products = () => {
     { aro: "16", description: "Excelente para SUVs compactos", image: "/products/aro-16-wheel-new.png" },
     { aro: "17", description: "Premium para sedans e SUVs", image: "/products/aro-17-wheel.png" },
     { aro: "18", description: "Esportivo para carros de performance", image: "/products/aro-18-wheel.png" },
-    { aro: "19", description: "Luxury para veículos premium" },
+    { aro: "19", description: "Luxury para veículos premium", image: "/products/aro-19-wheel.png" },
     { aro: "20", description: "Alto padrão para SUVs grandes" },
     { aro: "21", description: "Exclusivo para veículos de luxo" },
     { aro: "22", description: "Top de linha para grandes SUVs" },
