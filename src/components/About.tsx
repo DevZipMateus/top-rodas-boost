@@ -78,23 +78,12 @@ const About = () => {
                   segurança do seu veículo.
                 </p>
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="text-center p-4 bg-primary/10 rounded-lg">
-                  <div className="text-2xl font-bold text-primary">13-22</div>
-                  <div className="text-sm text-muted-foreground">Aros disponíveis</div>
-                </div>
-                <div className="text-center p-4 bg-primary/10 rounded-lg">
-                  <div className="text-2xl font-bold text-primary">100%</div>
-                  <div className="text-sm text-muted-foreground">Qualidade garantida</div>
-                </div>
-                <div className="text-center p-4 bg-primary/10 rounded-lg">
-                  <div className="text-2xl font-bold text-primary">24h</div>
-                  <div className="text-sm text-muted-foreground">Atendimento online</div>
-                </div>
-                <div className="text-center p-4 bg-primary/10 rounded-lg">
-                  <div className="text-2xl font-bold text-primary">9 Estados</div>
-                  <div className="text-sm text-muted-foreground">Área de entrega</div>
-                </div>
+              <div className="relative">
+                <img
+                  src="/about/wheels-inventory.jpg"
+                  alt="Estoque de rodas e pneus Top Rodas"
+                  className="w-full h-full object-cover rounded-lg shadow-lg"
+                />
               </div>
             </div>
           </div>
