@@ -126,7 +126,7 @@ const Projects = () => {
       {/* Lightbox Modal */}
       {selectedImage !== null && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
-          <div className="relative max-w-4xl max-h-[90vh] w-full">
+          <div className="relative w-full h-full flex items-center justify-center">
             <button
               onClick={closeLightbox}
               className="absolute top-4 right-4 z-10 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
@@ -151,7 +151,7 @@ const Projects = () => {
             <img
               src={projects[selectedImage].image}
               alt={`Projeto Top Rodas ${projects[selectedImage].id}`}
-              className="w-full h-full object-contain rounded-lg"
+              className="max-w-[calc(100%-8rem)] max-h-[calc(100%-8rem)] w-auto h-auto object-contain rounded-lg"
             />
           </div>
         </div>
