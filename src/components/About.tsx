@@ -82,7 +82,7 @@ const About = () => {
                 <img
                   src="/about/wheels-inventory.jpg"
                   alt="Estoque de rodas e pneus Top Rodas"
-                  className="w-full h-full object-cover rounded-lg shadow-lg"
+                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
             </div>
