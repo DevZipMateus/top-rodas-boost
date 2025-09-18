@@ -88,11 +88,11 @@ const Projects = () => {
                 className="group cursor-pointer overflow-hidden hover:shadow-lg transition-all duration-300"
                 onClick={() => openLightbox(index)}
               >
-                <div className="relative aspect-[4/3] overflow-hidden bg-muted/10">
+                <div className="relative aspect-[4/3] overflow-hidden">
                   <img
                     src={project.image}
                     alt={`Projeto Top Rodas ${project.id}`}
-                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </Card>
