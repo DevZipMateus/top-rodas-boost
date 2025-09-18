@@ -129,23 +129,26 @@ const Projects = () => {
           <div className="relative w-full h-full flex items-center justify-center">
             <button
               onClick={closeLightbox}
-              className="absolute top-4 right-4 z-10 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+              className="absolute top-4 right-4 z-10 bg-black/50 text-white px-3 py-2 rounded-full hover:bg-black/70 transition-colors flex items-center gap-2"
             >
-              <X size={20} />
+              <X size={16} />
+              <span className="text-sm">Fechar</span>
             </button>
             
             <button
               onClick={prevImage}
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 text-white px-3 py-2 rounded-full hover:bg-black/70 transition-colors flex items-center gap-2"
             >
-              <ChevronLeft size={20} />
+              <ChevronLeft size={16} />
+              <span className="text-sm">Anterior</span>
             </button>
             
             <button
               onClick={nextImage}
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 text-white px-3 py-2 rounded-full hover:bg-black/70 transition-colors flex items-center gap-2"
             >
-              <ChevronRight size={20} />
+              <span className="text-sm">Próximo</span>
+              <ChevronRight size={16} />
             </button>
 
             <img
