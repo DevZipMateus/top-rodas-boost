@@ -1,63 +1,87 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 const Projects = () => {
-  const [currentProject, setCurrentProject] = useState(0);
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
-  // Projetos de exemplo - em uma implementação real, estas imagens viriam de uma API ou CMS
+  // Projetos reais da Top Rodas
   const projects = [
     {
       id: 1,
-      title: "Civic Si - Aro 18",
-      description: "Transformação completa com rodas esportivas aro 18 e pneus de alta performance",
-      category: "Esportivo",
-      wheel: "Aro 18"
+      image: "/projects/golf-gti.jpg",
+      title: "Golf GTI",
+      description: "Rodas esportivas de alta performance"
     },
     {
       id: 2,
-      title: "Hilux - Aro 20",
-      description: "Upgrade premium com rodas off-road aro 20 para maior imponência",
-      category: "SUV/Pickup",
-      wheel: "Aro 20"
+      image: "/projects/hilux.jpg", 
+      title: "Toyota Hilux",
+      description: "Rodas off-road para máxima resistência"
     },
     {
       id: 3,
-      title: "Corolla - Aro 16",
-      description: "Modernização elegante com rodas originais aro 16 e pneus nacionais",
-      category: "Sedan",
-      wheel: "Aro 16"
+      image: "/projects/polo-branco.jpg",
+      title: "Volkswagen Polo",
+      description: "Upgrade moderno e elegante"
     },
     {
       id: 4,
-      title: "Golf GTI - Aro 19",
-      description: "Performance máxima com rodas esportivas aro 19 e pneus importados",
-      category: "Hatch Premium",
-      wheel: "Aro 19"
+      image: "/projects/suv-branco-1.jpg",
+      title: "SUV Premium",
+      description: "Rodas de luxo para maior imponência"
     },
     {
       id: 5,
-      title: "Tracker - Aro 17",
-      description: "SUV compacto com visual renovado usando rodas aro 17",
-      category: "SUV Compacto",
-      wheel: "Aro 17"
+      image: "/projects/suv-branco-2.jpg",
+      title: "SUV Executivo",
+      description: "Design sofisticado e performance"
     },
     {
       id: 6,
-      title: "Fusca - Aro 15",
-      description: "Clássico restaurado com rodas vintage aro 15 respeitando o estilo original",
-      category: "Clássico",
-      wheel: "Aro 15"
+      image: "/projects/jeep-compass.jpg",
+      title: "Jeep Compass",
+      description: "Estilo aventureiro com elegância urbana"
+    },
+    {
+      id: 7,
+      image: "/projects/suv-branco-3.jpg",
+      title: "SUV Moderno",
+      description: "Tecnologia e design em harmonia"
+    },
+    {
+      id: 8,
+      image: "/projects/gol-vermelho.jpg",
+      title: "Volkswagen Gol",
+      description: "Transformação esportiva completa"
+    },
+    {
+      id: 9,
+      image: "/projects/suv-branco-4.jpg",
+      title: "SUV Contemporâneo", 
+      description: "Inovação em cada detalhe"
     }
   ];
 
-  const nextProject = () => {
-    setCurrentProject((prev) => (prev + 1) % projects.length);
+  const openLightbox = (index: number) => {
+    setSelectedImage(index);
   };
 
-  const prevProject = () => {
-    setCurrentProject((prev) => (prev - 1 + projects.length) % projects.length);
+  const closeLightbox = () => {
+    setSelectedImage(null);
+  };
+
+  const nextImage = () => {
+    if (selectedImage !== null) {
+      setSelectedImage((selectedImage + 1) % projects.length);
+    }
+  };
+
+  const prevImage = () => {
+    if (selectedImage !== null) {
+      setSelectedImage((selectedImage - 1 + projects.length) % projects.length);
+    }
   };
 
   return (
@@ -69,95 +93,44 @@ const Projects = () => {
               Projetos realizados
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Conheça alguns dos projetos que realizamos. Cada transformação é única 
-              e feita com muito cuidado e atenção aos detalhes.
+              Confira alguns dos nossos trabalhos. Cada projeto é único e feito 
+              com muito cuidado e atenção aos detalhes.
             </p>
           </div>
 
-          {/* Projeto em destaque */}
-          <div className="mb-12">
-            <Card className="overflow-hidden">
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-8 lg:p-12 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-32 h-32 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                      <span className="text-3xl font-bold text-primary">
-                        {projects[currentProject].wheel}
-                      </span>
-                    </div>
-                    <div className="text-sm text-primary font-semibold mb-2">
-                      {projects[currentProject].category}
-                    </div>
-                    <div className="text-xs text-muted-foreground">
-                      Projeto #{projects[currentProject].id}
-                    </div>
-                  </div>
-                </div>
-                <CardContent className="p-8 lg:p-12 flex flex-col justify-center">
-                  <h3 className="text-2xl font-bold text-foreground mb-4">
-                    {projects[currentProject].title}
-                  </h3>
-                  <p className="text-muted-foreground mb-6">
-                    {projects[currentProject].description}
-                  </p>
-                  <div className="flex items-center gap-4">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      onClick={prevProject}
-                      className="flex items-center gap-2"
-                    >
-                      <ChevronLeft className="h-4 w-4" />
-                      Anterior
-                    </Button>
-                    <Button
-                      variant="outline" 
-                      size="sm"
-                      onClick={nextProject}
-                      className="flex items-center gap-2"
-                    >
-                      Próximo
-                      <ChevronRight className="h-4 w-4" />
-                    </Button>
-                  </div>
-                </CardContent>
-              </div>
-            </Card>
-          </div>
-
-          {/* Grid de todos os projetos */}
+          {/* Grid de projetos */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {projects.map((project, index) => (
               <Card 
                 key={project.id}
-                className={`cursor-pointer transition-all hover:shadow-lg ${
-                  index === currentProject ? 'ring-2 ring-primary' : ''
-                }`}
-                onClick={() => setCurrentProject(index)}
+                className="group cursor-pointer overflow-hidden hover:shadow-lg transition-all duration-300"
+                onClick={() => openLightbox(index)}
               >
-                <CardContent className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-sm text-primary font-semibold">
-                      {project.category}
-                    </span>
-                    <span className="text-sm text-muted-foreground">
-                      {project.wheel}
-                    </span>
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-white text-center p-4">
+                      <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
+                      <p className="text-sm">{project.description}</p>
+                    </div>
                   </div>
-                  <h4 className="font-semibold text-foreground mb-2">
-                    {project.title}
-                  </h4>
-                  <p className="text-sm text-muted-foreground line-clamp-2">
-                    {project.description}
-                  </p>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-semibold text-foreground mb-1">{project.title}</h3>
+                  <p className="text-sm text-muted-foreground">{project.description}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
 
+          {/* Call to action */}
           <div className="text-center">
             <p className="text-muted-foreground mb-6">
-              Quer ver seu veículo transformado? Entre em contato conosco!
+              Quer ver seu veículo transformado como estes? Entre em contato conosco!
             </p>
             <Button size="lg" asChild>
               <a
@@ -171,6 +144,45 @@ const Projects = () => {
           </div>
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      {selectedImage !== null && (
+        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+          <div className="relative max-w-4xl max-h-[90vh] w-full">
+            <button
+              onClick={closeLightbox}
+              className="absolute top-4 right-4 z-10 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+            >
+              <X size={20} />
+            </button>
+            
+            <button
+              onClick={prevImage}
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+            >
+              <ChevronLeft size={20} />
+            </button>
+            
+            <button
+              onClick={nextImage}
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+            >
+              <ChevronRight size={20} />
+            </button>
+
+            <img
+              src={projects[selectedImage].image}
+              alt={projects[selectedImage].title}
+              className="w-full h-full object-contain rounded-lg"
+            />
+            
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/70 text-white px-4 py-2 rounded-lg text-center">
+              <h3 className="font-semibold">{projects[selectedImage].title}</h3>
+              <p className="text-sm opacity-90">{projects[selectedImage].description}</p>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
