@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Products = () => {
   const wheelSizes = [
-    { aro: "13", description: "Ideal para carros populares e economia" },
+    { aro: "13", description: "Ideal para carros populares e economia", image: "/products/aro-13-wheel.png" },
     { aro: "14", description: "Perfeito para compactos e sedans" },
     { aro: "15", description: "Ótima opção para sedans médios" },
     { aro: "16", description: "Excelente para SUVs compactos" },
@@ -54,9 +54,19 @@ const Products = () => {
                       <CardTitle className="text-lg">Aro {wheel.aro}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <span className="text-primary font-bold">{wheel.aro}"</span>
-                      </div>
+                      {wheel.image ? (
+                        <div className="w-16 h-16 mx-auto mb-3 flex items-center justify-center">
+                          <img 
+                            src={wheel.image} 
+                            alt={`Roda aro ${wheel.aro}`}
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                      ) : (
+                        <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                          <span className="text-primary font-bold">{wheel.aro}"</span>
+                        </div>
+                      )}
                       <p className="text-sm text-muted-foreground mb-4">
                         {wheel.description}
                       </p>
