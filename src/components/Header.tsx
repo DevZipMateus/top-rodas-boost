@@ -66,12 +66,18 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center">
-            <Button asChild variant="default">
+            <Button asChild variant="default" className="bg-[#25D366] hover:bg-[#1fa851]">
               <a
                 href="https://wa.me/5583999060703"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center gap-2"
               >
+                <img 
+                  src="/whatsapp-icon.png" 
+                  alt="WhatsApp" 
+                  className="h-4 w-4"
+                />
                 WhatsApp
               </a>
             </Button>
@@ -126,12 +132,18 @@ const Header = () => {
               >
                 Contato
               </button>
-              <Button asChild variant="default" className="w-fit">
+              <Button asChild variant="default" className="w-fit bg-[#25D366] hover:bg-[#1fa851]">
                 <a
                   href="https://wa.me/5583999060703"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="flex items-center gap-2"
                 >
+                  <img 
+                    src="/whatsapp-icon.png" 
+                    alt="WhatsApp" 
+                    className="h-4 w-4"
+                  />
                   WhatsApp
                 </a>
               </Button>

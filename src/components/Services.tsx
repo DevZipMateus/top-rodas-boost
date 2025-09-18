@@ -124,12 +124,18 @@ const Services = () => {
                     <p><strong>Domingos:</strong> Fechado</p>
                   </div>
                 </div>
-                <Button size="lg" asChild>
+                <Button size="lg" className="bg-[#25D366] hover:bg-[#1fa851]" asChild>
                   <a
                     href="https://wa.me/5583999060703"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="flex items-center gap-2"
                   >
+                    <img 
+                      src="/whatsapp-icon.png" 
+                      alt="WhatsApp" 
+                      className="h-5 w-5"
+                    />
                     Agendar serviço
                   </a>
                 </Button>

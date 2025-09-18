@@ -29,12 +29,18 @@ const Hero = () => {
           </h2>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" asChild>
+            <Button size="lg" className="bg-[#25D366] hover:bg-[#1fa851]" asChild>
               <a
                 href="https://wa.me/5583999060703"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center gap-2"
               >
+                <img 
+                  src="/whatsapp-icon.png" 
+                  alt="WhatsApp" 
+                  className="h-4 w-4"
+                />
                 Solicitar orçamento
               </a>
             </Button>
