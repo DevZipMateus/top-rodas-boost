@@ -7,7 +7,7 @@ const Products = () => {
   const wheelSizes = [
     { aro: "13", description: "Ideal para carros populares e economia", image: "/products/aro-13-wheel.png" },
     { aro: "14", description: "Perfeito para compactos e sedans", image: "/products/aro-14-wheel.png" },
-    { aro: "15", description: "Ótima opção para sedans médios" },
+    { aro: "15", description: "Ótima opção para sedans médios", image: "/products/aro-15-wheel.png" },
     { aro: "16", description: "Excelente para SUVs compactos" },
     { aro: "17", description: "Premium para sedans e SUVs" },
     { aro: "18", description: "Esportivo para carros de performance" },
