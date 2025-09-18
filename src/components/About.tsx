@@ -78,11 +78,11 @@ const About = () => {
                   segurança do seu veículo.
                 </p>
               </div>
-              <div className="relative">
+              <div className="relative max-w-md mx-auto">
                 <img
                   src="/about/wheels-inventory.jpg"
                   alt="Estoque de rodas e pneus Top Rodas"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
+                  className="w-full h-auto object-contain rounded-lg shadow-lg"
                 />
               </div>
             </div>
