@@ -28,8 +28,8 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
-                    Rua Projetada Nossa Senhora, 20<br />
-                    Cajazeiras-PB
+                    Avenida Ismael José Nascimento Rua 1 N: 1426<br />
+                    Jardim paraíso
                   </p>
                   <Button variant="outline" size="sm">
                     Ver no mapa
