@@ -32,7 +32,7 @@ const Hero = () => {
             if (element) element.scrollIntoView({
               behavior: "smooth"
             });
-          }} className="border-white text-white hover:text-black bg-zinc-50">
+          }} className="border-white text-white hover:text-black bg-zinc-950 hover:bg-zinc-800">
               Ver produtos
             </Button>
           </div>
