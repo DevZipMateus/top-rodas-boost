@@ -28,7 +28,7 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
-                    Avenida Ismael José Nascimento Rua 1 N: 1426<br />
+                    Rua Projetada Nossa Senhora, 20<br />
                     Jardim paraíso
                   </p>
                   <Button variant="outline" size="sm">
