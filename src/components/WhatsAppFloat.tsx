@@ -4,8 +4,7 @@ const WhatsAppFloat = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50">
       <Button
-        size="lg"
-        className="rounded-full h-14 w-14 shadow-lg hover:shadow-xl transition-shadow bg-[#25D366] hover:bg-[#1fa851] flex items-center justify-center p-0"
+        className="rounded-full shadow-lg hover:shadow-xl transition-all bg-[#25D366] hover:bg-[#1fa851] flex items-center gap-2 px-4 py-3 h-auto min-h-[56px]"
         asChild
       >
         <a
@@ -13,13 +12,15 @@ const WhatsAppFloat = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Contato via WhatsApp"
-          className="flex items-center justify-center w-full h-full"
+          className="flex items-center gap-2 text-white font-medium"
         >
           <img 
             src="/whatsapp-icon.png" 
             alt="WhatsApp" 
-            className="h-8 w-8 object-contain"
+            className="h-6 w-6 object-contain"
           />
+          <span className="hidden sm:inline">WhatsApp</span>
+          <span className="sm:hidden">Chat</span>
         </a>
       </Button>
     </div>

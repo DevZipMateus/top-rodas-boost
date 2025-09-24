@@ -85,10 +85,20 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="md:hidden flex items-center gap-2 px-3 py-2 text-foreground hover:text-primary transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? (
+              <>
+                <X size={20} />
+                <span className="text-sm font-medium">Fechar</span>
+              </>
+            ) : (
+              <>
+                <Menu size={20} />
+                <span className="text-sm font-medium">Menu</span>
+              </>
+            )}
           </button>
         </div>
 
