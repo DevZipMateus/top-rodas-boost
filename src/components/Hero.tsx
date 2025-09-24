@@ -47,7 +47,7 @@ const Hero = () => {
               <p className="text-white/80">Entregamos em todo Nordeste e região metropolitana de São Paulo</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-white mb-2">Cajazeiras-PB</h3>
+              <h3 className="text-lg font-semibold text-white mb-2">Jardim Paraíso</h3>
               <p className="text-white/80">Localização estratégica na Paraíba</p>
             </div>
           </div>

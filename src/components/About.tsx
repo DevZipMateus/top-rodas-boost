@@ -50,7 +50,7 @@ const About = () => {
                   Alcance regional
                 </h3>
                 <p className="text-muted-foreground">
-                  Localizados em Cajazeiras-PB, atendemos todo o Nordeste 
+                  Localizados no Jardim Paraíso, atendemos todo o Nordeste 
                   e região metropolitana de São Paulo.
                 </p>
               </CardContent>
