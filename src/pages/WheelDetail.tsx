@@ -99,11 +99,11 @@ const WheelDetail = () => {
           {info.images.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {info.images.map((image, index) => (
-                <div key={index} className="aspect-square rounded-lg overflow-hidden border border-border">
+                <div key={index} className="rounded-lg overflow-hidden border border-border bg-muted/30 p-4">
                   <img
                     src={image}
                     alt={`${info.title} - Imagem ${index + 1}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto object-contain"
                   />
                 </div>
               ))}
