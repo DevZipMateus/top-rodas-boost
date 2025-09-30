@@ -12,7 +12,11 @@ const WheelDetail = () => {
     "13": {
       title: "Rodas Aro 13",
       description: "Ideal para carros populares e economia",
-      images: []
+      images: [
+        "/products/aro-13/roda-1.jpg",
+        "/products/aro-13/roda-2.jpg",
+        "/products/aro-13/roda-3.jpg"
+      ]
     },
     "14": {
       title: "Rodas Aro 14",
