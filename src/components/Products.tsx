@@ -130,6 +130,13 @@ const Products = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
+                    <div className="mb-4">
+                      <img 
+                        src="/products/pneus-importados.jpg" 
+                        alt="Pneus importados de alta qualidade" 
+                        className="w-full h-48 object-cover rounded-lg"
+                      />
+                    </div>
                     <p className="text-muted-foreground mb-4">
                       Pneus de alta performance das melhores marcas internacionais
                     </p>
