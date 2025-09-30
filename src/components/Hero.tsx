@@ -48,7 +48,7 @@ const Hero = () => {
             </div>
             <div>
               <h3 className="text-lg font-semibold text-white mb-2">Jardim Paraíso</h3>
-              <p className="text-white/80">Localização estratégica na Paraíba</p>
+              <p className="text-white/80">Cajazeiras-PB - Localização estratégica na Paraíba</p>
             </div>
           </div>
         </div>

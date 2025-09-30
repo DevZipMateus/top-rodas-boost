@@ -32,7 +32,8 @@ const Footer = () => {
                   <MapPin className="h-4 w-4 text-primary" />
                   <span className="text-accent-foreground/80">
                     Rua Projetada Nossa Senhora, 20<br />
-                    Jardim paraíso
+                    Jardim paraíso<br />
+                    Cajazeiras-PB
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
