@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const Products = () => {
   const wheelSizes = [
@@ -54,7 +56,50 @@ const Products = () => {
                       <CardTitle className="text-lg">Aro {wheel.aro}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      {wheel.image ? (
+                      {wheel.aro === "13" ? (
+                        <Carousel
+                          className="w-full mb-3"
+                          opts={{
+                            align: "center",
+                            loop: true,
+                          }}
+                          plugins={[
+                            Autoplay({
+                              delay: 3000,
+                            }),
+                          ]}
+                        >
+                          <CarouselContent>
+                            <CarouselItem>
+                              <div className="w-16 h-16 mx-auto flex items-center justify-center">
+                                <img 
+                                  src="/products/aro-13-wheel-1.jpg" 
+                                  alt="Roda aro 13 - Modelo 1"
+                                  className="w-full h-full object-cover rounded"
+                                />
+                              </div>
+                            </CarouselItem>
+                            <CarouselItem>
+                              <div className="w-16 h-16 mx-auto flex items-center justify-center">
+                                <img 
+                                  src="/products/aro-13-wheel-2.jpg" 
+                                  alt="Roda aro 13 - Modelo 2"
+                                  className="w-full h-full object-cover rounded"
+                                />
+                              </div>
+                            </CarouselItem>
+                            <CarouselItem>
+                              <div className="w-16 h-16 mx-auto flex items-center justify-center">
+                                <img 
+                                  src="/products/aro-13-wheel-3.jpg" 
+                                  alt="Roda aro 13 - Modelo 3"
+                                  className="w-full h-full object-cover rounded"
+                                />
+                              </div>
+                            </CarouselItem>
+                          </CarouselContent>
+                        </Carousel>
+                      ) : wheel.image ? (
                         <div className="w-16 h-16 mx-auto mb-3 flex items-center justify-center">
                           <img 
                             src={wheel.image} 
