@@ -53,7 +53,17 @@ const WheelDetail = () => {
         "/products/aro-15/roda-7.jpg",
         "/products/aro-15/roda-8.jpg",
         "/products/aro-15/roda-9.jpg",
-        "/products/aro-15/roda-10.jpg"
+        "/products/aro-15/roda-10.jpg",
+        "/products/aro-15/roda-11.jpg",
+        "/products/aro-15/roda-12.jpg",
+        "/products/aro-15/roda-13.jpg",
+        "/products/aro-15/roda-14.jpg",
+        "/products/aro-15/roda-15.jpg",
+        "/products/aro-15/roda-16.jpg",
+        "/products/aro-15/roda-17.jpg",
+        "/products/aro-15/roda-18.jpg",
+        "/products/aro-15/roda-19.jpg",
+        "/products/aro-15/roda-20.jpg"
       ]
     },
     "16": {
