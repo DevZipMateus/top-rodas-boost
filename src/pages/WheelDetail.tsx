@@ -106,7 +106,18 @@ const WheelDetail = () => {
     "18": {
       title: "Rodas Aro 18",
       description: "Esportivo para carros de performance",
-      images: []
+      images: [
+        "/products/aro-18/roda-1.jpg",
+        "/products/aro-18/roda-2.jpg",
+        "/products/aro-18/roda-3.jpg",
+        "/products/aro-18/roda-4.jpg",
+        "/products/aro-18/roda-5.jpg",
+        "/products/aro-18/roda-6.jpg",
+        "/products/aro-18/roda-7.jpg",
+        "/products/aro-18/roda-8.jpg",
+        "/products/aro-18/roda-9.jpg",
+        "/products/aro-18/roda-10.jpg"
+      ]
     },
     "19": {
       title: "Rodas Aro 19",
