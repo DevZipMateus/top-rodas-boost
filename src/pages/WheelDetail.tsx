@@ -43,7 +43,18 @@ const WheelDetail = () => {
     "15": {
       title: "Rodas Aro 15",
       description: "Ótima opção para sedans médios",
-      images: []
+      images: [
+        "/products/aro-15/roda-1.jpg",
+        "/products/aro-15/roda-2.jpg",
+        "/products/aro-15/roda-3.jpg",
+        "/products/aro-15/roda-4.jpg",
+        "/products/aro-15/roda-5.jpg",
+        "/products/aro-15/roda-6.jpg",
+        "/products/aro-15/roda-7.jpg",
+        "/products/aro-15/roda-8.jpg",
+        "/products/aro-15/roda-9.jpg",
+        "/products/aro-15/roda-10.jpg"
+      ]
     },
     "16": {
       title: "Rodas Aro 16",
