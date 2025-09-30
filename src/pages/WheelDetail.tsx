@@ -129,7 +129,12 @@ const WheelDetail = () => {
     "20": {
       title: "Rodas Aro 20",
       description: "Alto padrão para SUVs grandes",
-      images: []
+      images: [
+        "/products/aro-20/roda-1.jpg",
+        "/products/aro-20/roda-2.jpg",
+        "/products/aro-20/roda-3.jpg",
+        "/products/aro-20/roda-4.jpg"
+      ]
     },
     "21": {
       title: "Rodas Aro 21",
