@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -71,13 +72,9 @@ const Products = () => {
                         {wheel.description}
                       </p>
                       <Button variant="outline" size="sm" asChild>
-                        <a
-                          href="https://wa.me/5583999060703"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Consultar
-                        </a>
+                        <Link to={`/aro/${wheel.aro}`}>
+                          Ver modelos
+                        </Link>
                       </Button>
                     </CardContent>
                   </Card>
