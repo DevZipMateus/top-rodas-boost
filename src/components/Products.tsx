@@ -113,6 +113,15 @@ const Products = () => {
             </TabsContent>
 
             <TabsContent value="pneus">
+              <div className="mb-8">
+                <div className="rounded-lg overflow-hidden">
+                  <img 
+                    src="/products/pneus-showroom.jpg" 
+                    alt="Showroom de pneus Top Rodas" 
+                    className="w-full h-64 md:h-80 object-cover"
+                  />
+                </div>
+              </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <Card>
                   <CardHeader>
