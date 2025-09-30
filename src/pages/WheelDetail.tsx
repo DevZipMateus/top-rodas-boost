@@ -71,7 +71,13 @@ const WheelDetail = () => {
     "16": {
       title: "Rodas Aro 16",
       description: "Excelente para SUVs compactos",
-      images: []
+      images: [
+        "/products/aro-16/roda-1.jpg",
+        "/products/aro-16/roda-2.jpg",
+        "/products/aro-16/roda-3.jpg",
+        "/products/aro-16/roda-4.jpg",
+        "/products/aro-16/roda-5.jpg"
+      ]
     },
     "17": {
       title: "Rodas Aro 17",
