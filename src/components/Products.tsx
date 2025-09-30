@@ -166,6 +166,13 @@ const Products = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
+                    <div className="mb-4">
+                      <img 
+                        src="/products/pneus-nacionais.jpg" 
+                        alt="Pneus nacionais de qualidade" 
+                        className="w-full h-48 object-cover rounded-lg"
+                      />
+                    </div>
                     <p className="text-muted-foreground mb-4">
                       Pneus de qualidade das principais marcas brasileiras
                     </p>
