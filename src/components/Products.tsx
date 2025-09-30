@@ -114,11 +114,11 @@ const Products = () => {
 
             <TabsContent value="pneus">
               <div className="mb-8">
-                <div className="rounded-lg overflow-hidden">
+                <div className="rounded-lg overflow-hidden bg-muted/20 p-4">
                   <img 
                     src="/products/pneus-showroom.jpg" 
                     alt="Showroom de pneus Top Rodas" 
-                    className="w-full h-64 md:h-80 object-cover"
+                    className="w-full h-auto object-contain max-h-80"
                   />
                 </div>
               </div>
