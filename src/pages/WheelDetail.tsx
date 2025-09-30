@@ -144,7 +144,12 @@ const WheelDetail = () => {
     "22": {
       title: "Rodas Aro 22",
       description: "Top de linha para grandes SUVs",
-      images: []
+      images: [
+        "/products/aro-22/roda-1.jpg",
+        "/products/aro-22/roda-2.jpg",
+        "/products/aro-22/roda-3.jpg",
+        "/products/aro-22/roda-4.jpg"
+      ]
     }
   };
 
