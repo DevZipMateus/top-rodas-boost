@@ -29,7 +29,6 @@ const Contact = () => {
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
                     Rua Projetada Nossa Senhora, 20<br />
-                    Jardim paraíso<br />
                     Cajazeiras-PB
                   </p>
                   <Button variant="outline" size="sm">
