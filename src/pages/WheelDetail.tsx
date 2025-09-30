@@ -21,7 +21,18 @@ const WheelDetail = () => {
     "14": {
       title: "Rodas Aro 14",
       description: "Perfeito para compactos e sedans",
-      images: []
+      images: [
+        "/products/aro-14/roda-1.jpg",
+        "/products/aro-14/roda-2.jpg",
+        "/products/aro-14/roda-3.jpg",
+        "/products/aro-14/roda-4.jpg",
+        "/products/aro-14/roda-5.jpg",
+        "/products/aro-14/roda-6.jpg",
+        "/products/aro-14/roda-7.jpg",
+        "/products/aro-14/roda-8.jpg",
+        "/products/aro-14/roda-9.jpg",
+        "/products/aro-14/roda-10.jpg"
+      ]
     },
     "15": {
       title: "Rodas Aro 15",
